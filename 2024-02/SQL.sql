@@ -1,3 +1,4 @@
+#------------2024-02-14-------------------
 show databases;
 use world;
 show tables;
@@ -16,6 +17,7 @@ select * from city where population >= 5000000;
 select * from city where population >= 1000000 and countrycode='KOR'; 
 desc city;
 
+#------------2024-02-15-------------------
 #1. city 테이블 조회
 #2. city 테이블에서 한국 도시 조회
 #3. city 테이블인구수 50000000보다 많은 도시 조회
@@ -44,6 +46,8 @@ select * from city where id = 10000;  #추가한 김포검색
 select * from city where CountryCode = 'KOR'; #1
 select * from city where Pupulation >= 5000000;
 
+
+#------------2024-02-16-------------------
 show databases;
 use world;
 show tables;
@@ -180,7 +184,7 @@ desc business_card;
 insert into business_card (id,name, address, telephone) values(1,'홍길동', '김포시', '123-1234-1234');
 insert into business_card values(3,'김철수', '고양시', '123-3212-1234'),(4,'Son', 'NewYork', '12-1212-1212');
 
-select * from business_card;
+select * from business_card;new_tablenew_tableid
 delete from business_card where id=3;
 delete from business_card where address = '김포시';
 update business_card set address = '파주시' where id =3;
@@ -227,6 +231,7 @@ alter table newbook drop primary key;             # primary 키 삭제
 # alter table newbook drop primary key, add index(OLD_PRIMARY_KEY_FIELED);
 
 
+#----------#2024-02-29----------------------------------------
 
 
 
